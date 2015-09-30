@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.labelchat.ui.widget.ClickEventInterceptLinear xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/interest_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/interest_item_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/label_movie" />
+
+        <com.ekuater.labelchat.ui.widget.FlowLayout
+            android:id="@+id/interest_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/interest_item_icon" />
+
+        <LinearLayout
+            android:id="@+id/interest_item_null"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/interest_item_icon"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/interest_item_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input"
+                android:textColor="@color/story_grey"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray"/>
+
+</com.ekuater.labelchat.ui.widget.ClickEventInterceptLinear>

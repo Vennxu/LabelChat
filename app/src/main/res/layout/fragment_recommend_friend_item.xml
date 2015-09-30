@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/detail_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/info_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="382">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.ekuater.labelchat.ui.widget.CircleImageView
+                            android:id="@+id/avatar_image"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="2dp"
+                            android:src="@drawable/temp_small_pics_1"
+                            app:border_color="@color/white"
+                            app:border_width="1px" />
+
+                        <ImageView
+                            android:id="@+id/gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:src="@drawable/icon_female" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dp" />
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/user_name_sample" />
+
+                    <TextView
+                        android:id="@+id/label_code"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/label_code_sample" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/city_sample" />
+
+                    <TextView
+                        android:id="@+id/constellation"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/constellation_sample" />
+
+                    <TextView
+                        android:id="@+id/age"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/age_sample" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/distance"
+                        style="@style/FriendDetailTextStyle"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/distance_sample" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/divider_color" />
+
+            <FrameLayout
+                android:id="@+id/label_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="618">
+
+                <ListView
+                    android:id="@+id/label_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@null"
+                    android:dividerHeight="@dimen/label_show_item_vertical_gap"
+                    android:fadeScrollbars="false"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="vertical" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/operation_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/disinclination">
+
+        <Button
+            android:id="@+id/btn_talk_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_selector"
+            android:text="@string/talk_a_while"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_selector"
+            android:text="@string/add_friend"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/disinclination"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/register_btn_pressed"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:text="不感兴趣" />
+
+</RelativeLayout>

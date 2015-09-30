@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NormalTitleBarStyle">
+
+    <TextView
+        style="@style/NormalTitleStyle"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tip_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/message_tip"
+        android:gravity="center"
+        android:paddingBottom="1px"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_right"
+        style="@style/NormalTitleStyle"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:text="@string/app_name"
+        android:visibility="gone" />
+</FrameLayout>

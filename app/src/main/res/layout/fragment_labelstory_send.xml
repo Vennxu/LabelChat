@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.labelchat.ui.fragment.labelstory.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/labelstory_fragment_send_keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/normal_title" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="?android:actionBarSize" />.
+
+    <LinearLayout
+        android:id="@+id/labelstory_fragment_send_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ekuater.labelchat.ui.widget.emoji.EmojiEditText
+                android:id="@+id/labelstory_fragment_send_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/labelstory_input_send_hint"
+                android:maxLength="100"
+                android:minHeight="100dp"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+            <com.ekuater.labelchat.ui.widget.emoji.ShowContentTextView
+                android:id="@+id/labelstory_fragment_send_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:textSize="18sp"
+                android:hint="@string/labelstory_input_send_hint"/>
+        </RelativeLayout>
+
+
+        <GridView
+            android:id="@+id/labelstory_fragment_send_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/labelstory_fragment_send_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="@string/labelstory_input_send_remainfinish"
+                android:textColor="@color/colorlabelstory_dark" />
+
+            <TextView
+                android:id="@+id/labelstory_fragment_send_remainimag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="@string/labelstory_input_send_remainimage"
+                android:textColor="@color/colorlabelstory_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="@string/labelStory_intpu_send_warn"
+            android:textColor="@color/colorlabelstory_dark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorlabelstory_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelstory_fragment_send_relative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_story_submit_normal"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/labelstory_fragment_send_bunding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/labelstory_input_bunding"
+            android:textColor="@color/comment_name"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/labelstory_fragment_send_emojilinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <ImageButton
+            android:id="@+id/labelstory_fragment_send_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/chatting_ui_input_bar_edge_gap"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/chatting_ui_face_switch_btn_content_description"
+            android:src="@drawable/ic_labelstory_send_emoji_pressed" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <include
+            layout="@layout/chatting_ui_emoji_selector"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</com.ekuater.labelchat.ui.fragment.labelstory.KeyboardListenRelativeLayout>

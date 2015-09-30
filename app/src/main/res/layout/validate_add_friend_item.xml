@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
+
+    <com.ekuater.labelchat.ui.widget.CircleImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/contact_single"
+        app:border_color="@color/white"
+        app:border_width="1px" />
+
+    <LinearLayout
+        android:id="@+id/title_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="100dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/message_item_title_example"
+                android:textColor="#FF000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/title"
+                android:text="@string/addfriend_notify_subTitle"
+                android:textColor="@color/colorLightDark"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/message_item_subtitle_example"
+                android:textColor="@color/colorRemarks"
+                android:layout_below="@id/title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/state_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/btn_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reject"
+                style="@style/ValidateBtnStyle"
+                android:background="@drawable/validate_reject_bg"
+                android:text="@string/reject" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_agree"
+                style="@style/ValidateBtnStyle"
+                android:background="@drawable/validate_agree_bg"
+                android:text="@string/agree" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="@string/already_reject"
+            android:textColor="@color/colorRemarks"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/label_select_text1"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text2"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text3"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text4"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text5"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="131dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text6"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text7"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text8"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text9"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text10"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text11"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text12"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text13"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="222dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text14"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text15"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="283dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text16"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="242dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text17"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="179dp"
+        android:layout_marginTop="266dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text18"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text19"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="269dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text20"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="333dp"
+        android:background="@drawable/circle_select_124" />
+
+    <TextView
+        android:id="@id/label_select_text21"
+        style="@style/LabelSelectTextStyle20"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="333dp"
+        android:background="@drawable/circle_select_124" />
+</RelativeLayout>

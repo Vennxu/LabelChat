@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/normal_title" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/set_signature"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/signature" />
+
+                <RelativeLayout style="@style/SettingItemContentStyle">
+
+                    <ImageView
+                        android:id="@+id/edit_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_edit_pen" />
+
+                    <TextView
+                        android:id="@+id/signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/user_name_sample"
+                        android:textColor="@color/colorRemarks"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_height="12dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/set_nickname"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/nickname" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/set_gender"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/gender" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/set_label_code"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/label_code" />
+
+                <TextView
+                    android:id="@+id/label_code"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_height="12dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/set_region"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/region" />
+
+                <TextView
+                    android:id="@+id/region"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/set_school"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/school" />
+
+                <TextView
+                    android:id="@+id/school"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/set_job"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/job" />
+
+                <TextView
+                    android:id="@+id/job"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+
+            <LinearLayout
+                android:id="@+id/set_constellation"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/constellation" />
+
+                <TextView
+                    android:id="@+id/constellation"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:id="@+id/set_age"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/age"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/set_height"
+                style="@style/SettingTableRowStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/SettingItemTitleStyle"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/height"
+                    style="@style/SettingItemContentStyle"
+                    android:textColor="@color/colorRemarks" />
+            </LinearLayout>
+
+            <View
+                style="@style/SettingItemDividerStyle"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/focus_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text">
+
+        <requestFocus />
+    </View>
+</LinearLayout>

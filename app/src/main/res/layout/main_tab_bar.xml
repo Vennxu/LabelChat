@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/main_tab_bar_background"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <RadioButton
+        android:id="@+id/tab_message"
+        style="@style/MainTabRadioStyle"
+        android:checked="true"
+        android:drawableTop="@drawable/main_message"
+        android:text="@string/main_activity_tab_message" />
+
+    <RadioButton
+        android:id="@+id/tab_trends"
+        style="@style/MainTabRadioStyle"
+        android:drawableTop="@drawable/main_trends"
+        android:text="@string/story" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <RadioButton
+        android:id="@+id/tab_relationship"
+        style="@style/MainTabRadioStyle"
+        android:drawableTop="@drawable/main_relationship"
+        android:text="@string/main_activity_tab_relationship" />
+
+    <RadioButton
+        android:id="@+id/tab_info"
+        style="@style/MainTabRadioStyle"
+        android:drawableTop="@drawable/main_info"
+        android:text="@string/me" />
+</RadioGroup>

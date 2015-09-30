@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_padding">16dp</dimen>
+    <dimen name="activity_vertical_padding">16dp</dimen>
+    <dimen name="pie_progress_inner_size">35dp</dimen>
+
+    <dimen name="user_show_top_title_height">200dp</dimen>
+</resources>

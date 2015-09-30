@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ChatItemDateTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:background">@drawable/chatting_item_datetime_bg</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ChatItemSendContentText">
+        <item name="android:textSize">@dimen/chatting_message_text_size</item>
+        <item name="android:textColor">#FF3D3D3D</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="ChatItemRecvContentText">
+        <item name="android:textSize">@dimen/chatting_message_text_size</item>
+        <item name="android:textColor">#FF3D3D3D</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="ChatItemUIStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">false</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ChatInputBarEditStyle">
+        <item name="android:textSize">@dimen/chatting_message_text_size</item>
+        <item name="android:textColor">@color/chatting_ui_input_edit_text_color</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:maxLines">@integer/chatting_ui_input_edit_max_line</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="ChatUIRecordIndicatorDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/record_indicator_dialog_bg</item>
+    </style>
+</resources>

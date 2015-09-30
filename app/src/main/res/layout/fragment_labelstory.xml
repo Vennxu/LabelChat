@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/labelstory_fragment_relative"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/normal_title" />
+
+    <RelativeLayout
+        android:id="@+id/labelstory_fragment_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.ekuater.labelchat.ui.fragment.labelstory.CustomListView
+            android:id="@+id/labelstory_fragment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:divider="@null" />
+
+        <include
+            android:id="@+id/labelstory_input_layout"
+            layout="@layout/labelstory_input"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_story_loading"/>
+
+    <ImageView
+        android:id="@+id/labelstory_fragment_nodate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:background="@drawable/story_null"
+        android:visibility="gone" />
+</RelativeLayout>

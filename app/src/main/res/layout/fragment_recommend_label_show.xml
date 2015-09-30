@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/LabelTextStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/praise_label_different"
+        android:text="@string/label_sample_0"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/validate_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ekuater.labelchat.ui.widget.CircleImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/temp_small_pics_1"
+            app:border_color="#FFFFFFFF"
+            app:border_width="1dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/recommend_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/someone_label_above_for_me"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/button_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/ic_btn_submit_disable"
+                android:text="@string/reject"
+                android:textColor="#FFFFFFFF"
+                android:textSize="22sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_agree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/submit_btn_selector"
+                android:text="@string/agree"
+                android:textColor="#FFFFFFFF"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/processed_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/validate_area"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_btn_submit_disable"
+        android:gravity="center"
+        android:text="@string/already_agree"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22sp" />
+</RelativeLayout>

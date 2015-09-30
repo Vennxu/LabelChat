@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--
+    <string-array name="system_account_name" translatable="false">
+        <item>label code</item>
+        <item>user id</item>
+        <item>nickname</item>
+        <item>avatar thumb file</item>
+        <item>avatar file</item>
+    </string-array>
+    -->
+
+    <integer name="system_account_field">5</integer>
+
+    <array name="system_accounts">
+        <item>@array/app_team_account</item>
+    </array>
+
+    <string name="app_team_user_id" translatable="false">00000000000000000000000000010000</string>
+    <string-array name="app_team_account" translatable="false">
+        <item>10000</item>
+        <item>@string/app_team_user_id</item>
+        <item>@string/app_team</item>
+        <item>assets://ic_app_team.png</item>
+        <item>assets://ic_app_team.png</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="emoji_smile">真开心哈</string>
+    <string name="emoji_chat">有空聊天么</string>
+    <string name="emoji_cry">好桑心噢</string>
+    <string name="emoji_angry">太气人了</string>
+    <string name="emoji_scared">吓死人啊</string>
+    <string name="emoji_custom">自定义消息</string>
+
+    <array name="mood_emoji">
+        <item>@drawable/emoji_f_static_2_90</item>
+        <item>@drawable/emoji_f_static_3_100</item>
+        <item>@drawable/emoji_f_static_4_80</item>
+        <item>@drawable/emoji_f_static_1_120</item>
+        <!--<item>@drawable/emoji_f_static_2_170</item>-->
+    </array>
+
+    <string-array name="mood_text" translatable="false">
+        <item>@string/emoji_smile</item>
+        <item>@string/emoji_chat</item>
+        <item>@string/emoji_cry</item>
+        <item>@string/emoji_angry</item>
+        <!--<item>@string/emoji_scared</item>-->
+    </string-array>
+
+    <string-array name="mood_text_content" translatable="false">
+        <item>[2_90]</item>
+        <item>[3_100]</item>
+        <item>[4_80]</item>
+        <item>[1_120]</item>
+        <!--<item>[2_170]</item>-->
+    </string-array>
+
+</resources>

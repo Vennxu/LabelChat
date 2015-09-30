@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_ui_input_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/chatting_ui_input_bar_bg"
+    android:gravity="center"
+    android:minHeight="@dimen/chatting_ui_input_bar_min_height"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+
+    <!-- left part components -->
+    <ImageButton
+        android:id="@+id/chatting_ui_record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/chatting_ui_input_bar_edge_gap"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/chatting_ui_record_btn_content_description"
+        android:src="@drawable/ic_record_selector" />
+    <!-- left part components end -->
+
+    <!-- center part components -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/chatting_ui_input_bar_edge_gap"
+        android:layout_marginRight="@dimen/chatting_ui_input_bar_edge_gap"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/text_input_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatting_ui_input_bar_edit_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ekuater.labelchat.ui.widget.emoji.EmojiEditText
+                android:id="@+id/chatting_ui_input_edit"
+                style="@style/ChatInputBarEditStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/chatting_ui_input_edit_margin_left"
+                android:layout_marginRight="@dimen/chatting_ui_input_edit_margin_right"
+                android:layout_weight="1"
+                android:background="@null"
+                android:imeActionLabel="@string/chatting_ui_input_edit_ime_action_label"
+                android:minHeight="@dimen/chatting_ui_input_edit_height" />
+
+            <ImageButton
+                android:id="@+id/chatting_ui_face_switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/chatting_ui_input_bar_edge_gap"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/chatting_ui_face_switch_btn_content_description"
+                android:src="@drawable/ic_input_face_selector" />
+        </LinearLayout>
+
+        <com.ekuater.labelchat.ui.activity.chatting.RecordButton
+            android:id="@+id/start_record"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/chatting_record_btn_selector"
+            android:gravity="center"
+            android:text="@string/press_to_record"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!-- center part components end -->
+
+    <!-- right part components -->
+    <RelativeLayout
+        android:id="@+id/chatting_ui_input_right_btn_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/chatting_ui_input_bar_edge_gap"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/chatting_ui_input_attach_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/chatting_ui_input_attach_btn_content_description"
+            android:gravity="center"
+            android:src="@drawable/chatting_ui_input_type_select_btn" />
+
+        <Button
+            android:id="@+id/chatting_ui_input_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/chatting_ui_input_send_btn_bg"
+            android:gravity="center"
+            android:minHeight="@dimen/chatting_ui_input_send_btn_min_height"
+            android:minWidth="@dimen/chatting_ui_input_send_btn_min_width"
+            android:text="@string/chatting_ui_input_send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/chatting_ui_input_send_btn_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- right part components end -->
+</LinearLayout>

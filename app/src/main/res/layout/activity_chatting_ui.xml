@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.chatting.ChattingUI">
+
+    <include layout="@layout/chat_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/chat_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_chatting_background"
+                android:scaleType="fitXY"/>
+
+            <com.ekuater.labelchat.ui.activity.chatting.ChatMsgListView
+                android:id="@+id/chatting_ui_msg_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/chatting_list_items_divider_height"
+                android:listSelector="@color/transparent"
+                android:transcriptMode="normal" />
+
+            <include
+                layout="@layout/member_docker"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <include layout="@layout/chatting_ui_input_bar" />
+
+        <include
+            layout="@layout/chatting_ui_emoji_selector"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text">
+
+            <requestFocus />
+        </View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chatting_item_down_relative"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/chatting_item_down_linear"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chatting_item_down_text"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/chatting_down_backgroud"
+                android:gravity="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chatting_item_down_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/chatting_image_countdown" />
+    </RelativeLayout>
+</RelativeLayout>

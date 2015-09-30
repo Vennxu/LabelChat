@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="test_sample_launch_ui">测试入口界面</string>
+    <string name="friends_list_item_name_example">安静的美男子</string>
+    <string name="message_item_timestamp_example">06:21</string>
+    <string name="message_item_title_example">一二三四五六七八九</string>
+    <string name="message_item_subtitle_example">好好学习，天天向上！</string>
+    <string name="message_item_group_dismissed">该群已解散</string>
+
+    <string-array name="contact_names_sample">
+        <item>阿妹</item>
+        <item>阿郎</item>
+        <item>陈奕迅</item>
+        <item>周杰伦</item>
+        <item>曾一鸣</item>
+        <item>成龙</item>
+        <item>王力宏</item>
+        <item>汪峰</item>
+        <item>王菲</item>
+        <item>那英</item>
+        <item>张伟</item>
+        <item>张学友</item>
+        <item>李德华</item>
+        <item>郑源</item>
+        <item>白水水</item>
+        <item>白天不亮</item>
+        <item>陈龙</item>
+        <item>陈丽丽</item>
+        <item>哈林</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮今天</item>
+        <item>龚琳娜</item>
+        <item>苏醒</item>
+        <item>苏永康</item>
+        <item>陶喆</item>
+        <item>沙宝亮</item>
+        <item>宋冬野</item>
+        <item>宋伟</item>
+        <item>袁成杰</item>
+        <item>戚薇</item>
+        <item>齐大友</item>
+        <item>齐天大圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>伍佰</item>
+        <item>#蔡依林</item>
+        <item>$797835344$</item>
+        <item>Jack</item>
+        <item>~夏先生</item>
+    </string-array>
+
+    <string name="time_sample">8:00</string>
+    <string name="date_sample">4月27日</string>
+    <string name="address_main_sample">东胜神州</string>
+    <string name="address_detail_sample">花果山水帘洞附近</string>
+    <string name="photo_count_sample">3张</string>
+
+    <string name="catalog_sample">A</string>
+    <string name="user_name_sample">詹姆斯阿杜</string>
+    <string name="label_sample_0">我们都是好孩子</string>
+    <string name="label_sample_1">维护世界和平</string>
+    <string name="label_sample_2">问题儿童军团</string>
+    <string name="label_sample_3">神龙斗士</string>
+    <string name="label_sample_4">魔兽世界</string>
+    <string name="label_sample_5">好大一个坑</string>
+    <string name="label_sample_6">六块腹肌的程序员</string>
+    <string name="label_sample_7">八块腹肌的工程师</string>
+    <string name="label_sample_8">作的一手好SI</string>
+    <string name="label_sample_9">机智的小屁孩</string>
+    <string name="label_count_sample">10086</string>
+    <string name="label_dynamic_sample">&#160;&#160;有了新的动态</string>
+    <string name="label_integral">分</string>
+
+    <string name="remark_sample">大美女</string>
+    <string name="label_code_sample">123456789</string>
+    <string name="distance_sample">15公里</string>
+    <string name="city_sample">长沙</string>
+    <string name="constellation_sample">白羊座</string>
+    <string name="age_sample">20岁</string>
+    <string name="school_sample">湖南大学</string>
+    <string name="signature_sample">监考老师＋地理位置＋考场同学友善度＋手机流量＋手机搜索速度＝考试分数</string>
+
+    <string name="weekly_hot_label_sample">
+        {\"labelArray\": [
+            {\"userTotal\": \"10021\",\"createTime\": \"1409647036000\",\"labelName\": \"世界和平\",
+                \"labelId\": \"8a25862147b6dcb001483582c827000c\",\"createUserId\": \"8a2586214759d01701477b05d7c00000\"},
+            {\"userTotal\": \"5896\",\"createTime\": \"1409647467000\",\"labelName\": \"和平使命\",
+                \"labelId\": \"8a25862147b6dcb0014835895d51000d\",\"createUserId\": \"8a2586214759d01701477b05d7c00000\"},
+            {\"userTotal\": \"58651\",\"createTime\": \"1409647687000\",\"labelName\": \"使命召唤\",
+                \"labelId\": \"8a25862147b6dcb00148358cb5ef000e\",\"createUserId\": \"8a2586214759d01701477b05d7c00000\"},
+            {\"userTotal\": \"2531\",\"createTime\": \"1409716269000\",\"labelName\": \"召唤神龙\",
+                \"labelId\": \"8a25862148372c05014839a331bd0000\",\"createUserId\": \"8a2586214759d01701477b05d7c00000\"},
+            {\"userTotal\": \"5211\",\"createTime\": \"1409717431000\",\"labelName\": \"神龙斗士\",
+                \"labelId\": \"8a25862148372c05014839b4ee360001\",\"createUserId\": \"8a2586214759d01701477b05d7c00000\"}
+        ]}
+    </string>
+
+    <string name="validate_friend_message_sample">看到你的标签，你可能是我喜欢的类型哦。</string>
+    <string name="validate_friend_sample">
+        {
+            \"userVO\":
+            {
+                \"labelCode\": \"12345678\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                \"nickName\": \"张三\",\"position\": \"\",\"sex\": 1,\"popUser\": false,\"newFriend\": 58,
+                \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+            },
+            \"message\": \"看到你的标签，你可能是我喜欢的类型哦。\"
+        }
+    </string>
+
+    <string name="today_recommended_sample">
+        {
+            \"userArray\":
+            [
+                {
+                    \"labelCode\": \"12345678\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"张三\",\"position\": \"\",\"sex\": 1,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345679\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"李四\",\"position\": \"\",\"sex\": 1,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345680\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"王五\",\"position\": \"\",\"sex\": 2,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                }
+            ]
+        }
+    </string>
+
+    <string name="weekly_star_sample">
+        {
+            \"userArray\":
+            [
+                {
+                    \"labelCode\": \"12345678\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"张三\",\"position\": \"\",\"sex\": 1,\"popUser\": false,\"newFriend\": 58,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345679\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"李四\",\"position\": \"\",\"sex\": 1,\"popUser\": false,\"newFriend\": 54,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345680\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"王五\",\"position\": \"\",\"sex\": 2,\"popUser\": false,\"newFriend\": 60,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                }
+            ]
+        }
+    </string>
+
+    <string name="bubble_up_sample">
+        {
+            \"userArray\":
+            [
+                {
+                    \"labelCode\": \"12345678\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"张三\",\"position\": \"\",\"sex\": 1,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345679\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"李四\",\"position\": \"\",\"sex\": 1,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                },
+                {
+                    \"labelCode\": \"12345680\",\"userId\": \"8a2586214751cb6f0147521c76fe0000\",
+                    \"avata\": \"1412868490237.jpg\",\"avataThumb\": \"1412868490237.jpg\",
+                    \"nickName\": \"王五\",\"position\": \"\",\"sex\": 2,\"popUser\": false,
+                    \"labelArray\": [{\"labelName\": \"维护世界和平\"},{\"labelName\": \"问题儿童军团\"},{\"labelName\": \"神龙斗士\"}]
+                }
+            ]
+        }
+    </string>
+
+    <string name="weekly_star_confirm_message_sample">您好，您本周新增标签5个，新增好友8个，成为本周明星用户，您是否同意上本周明星榜？上榜之后，可能会有粉丝加您为好友哟！</string>
+    <string name="integral_sample">85</string>
+    <string name="label_grade_sample">2.5</string>
+    <string name="confide_content_sample">神的儿女继续作神的儿女了。死后也可以复活。因为耶稣复活了。 下面再展开来叙述一下我的看法。</string>
+
+    <string name="new_user_welcomes">欢迎来到敲敲，希望你在这里发现感兴趣的朋友！\n\n感谢你在[我]-[意见反馈]中反馈你发现的问题和意见！</string>
+</resources>

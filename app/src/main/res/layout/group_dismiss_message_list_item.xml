@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <com.ekuater.labelchat.ui.widget.CircleImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="@dimen/normal_avatar_width"
+        android:layout_height="@dimen/normal_avatar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/contact_single"
+        app:border_color="@color/white"
+        app:border_width="1px" />
+
+    <TextView
+        android:id="@+id/new_msg_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/avatar_image"
+        android:layout_alignTop="@+id/avatar_image"
+        android:background="@drawable/new_msg_hit_background"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:singleLine="true"
+        android:text="@string/message_item_timestamp_example"
+        android:textColor="@color/colorRemarks"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/title_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15sp"
+        android:layout_toLeftOf="@id/timestamp"
+        android:layout_toRightOf="@id/avatar_image"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/message_item_title_example"
+            android:textColor="@color/colorRemarks"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/group_dismiss_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/message_item_group_dismissed"
+            android:textColor="@color/colorRemarks"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

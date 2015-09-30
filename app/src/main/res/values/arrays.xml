@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="constellation_array">
+        <item>@string/aries</item>
+        <item>@string/taurus</item>
+        <item>@string/gemini</item>
+        <item>@string/cancer</item>
+        <item>@string/leo</item>
+        <item>@string/virgo</item>
+        <item>@string/libra</item>
+        <item>@string/scorpio</item>
+        <item>@string/sagittarius</item>
+        <item>@string/capricornus</item>
+        <item>@string/aquarius</item>
+        <item>@string/pisces</item>
+    </string-array>
+
+    <array name="constellation_icon_array">
+        <item>@drawable/ic_constellation_aries</item>
+        <item>@drawable/ic_constellation_taurus</item>
+        <item>@drawable/ic_constellation_gemini</item>
+        <item>@drawable/ic_constellation_cancer</item>
+        <item>@drawable/ic_constellation_leo</item>
+        <item>@drawable/ic_constellation_virgo</item>
+        <item>@drawable/ic_constellation_libra</item>
+        <item>@drawable/ic_constellation_scorpio</item>
+        <item>@drawable/ic_constellation_sagittarius</item>
+        <item>@drawable/ic_constellation_capricornus</item>
+        <item>@drawable/ic_constellation_aquarius</item>
+        <item>@drawable/ic_constellation_pisces</item>
+    </array>
+
+    <integer-array name="constellation_value_array">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+
+    <string-array name="setting_main_menu">
+        <item>去评分</item>
+        <item>标签</item>
+        <item>聊天</item>
+        <item>隐私</item>
+        <item>功能介绍</item>
+        <item>检查新版本</item>
+    </string-array>
+
+    <string-array name="setting_chat_size_key">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+
+    <string-array name="setting_chat_size_value">
+        <item>7</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="setting_aboutme_sex_key">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="setting_aboutme_sex_value">
+        <item>F</item>
+        <item>M</item>
+    </string-array>
+
+    <string-array name="setting_aboutme_constellation_key">
+        <item>白羊座[Aries]         </item>
+        <item>金牛座[Taurus]        </item>
+        <item>双子座[Gemini]        </item>
+        <item>巨蟹座[Cancer]        </item>
+        <item>狮子座[Leo]           </item>
+        <item>处女座[Virgo]         </item>
+        <item>天秤座[Libra]         </item>
+        <item>天蝎座[Scorpius]      </item>
+        <item>射手座[Sagittarius]   </item>
+        <item>摩羯座[Capricorn]     </item>
+        <item>水瓶座[Aquarius]      </item>
+        <item>双鱼座[Pisces]        </item>
+    </string-array>
+
+    <string-array name="setting_aboutme_constellation_value">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="appearance_faces">
+        <item>美女</item>
+        <item>帅哥</item>
+        <item>素人</item>
+        <item>丑女</item>
+        <item>挫男</item>
+    </string-array>
+
+    <array name="guide_images">
+        <item>@drawable/guide_image_1</item>
+        <item>@drawable/guide_image_2</item>
+        <item>@drawable/guide_image_3</item>
+    </array>
+
+    <array name="guide_create_group">
+        <item>@drawable/guide_create_group_image_1</item>
+        <item>@drawable/guide_create_group_image_2</item>
+        <item>@drawable/guide_create_group_image_3</item>
+    </array>
+
+    <string-array name="confide_colors" translatable="false">
+        <item>#ff5396a4</item>
+        <item>#ff4a95cf</item>
+        <item>#ffe6943d</item>
+        <item>#ff959f45</item>
+        <item>#ff9e5658</item>
+        <item>#ff876292</item>
+        <item>#ff8d8650</item>
+        <item>#ffb95c7c</item>
+        <item>#ff535353</item>
+        <item>#ff333333</item>
+        <item>#ff415283</item>
+        <item>#ff4b965e</item>
+    </string-array>
+</resources>

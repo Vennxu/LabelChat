@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ekuater.labelchat"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".TheApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/LCTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/amap_api_key" />
+
+        <!-- begin RongCloud imlib request -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="@string/rong_cloud_im_app_key" />
+
+        <service
+            android:name="io.rong.imlib.RongService"
+            android:process=":core" />
+        <service
+            android:name="io.rong.imlib.push.PushService"
+            android:exported="false"
+            android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.imlib.push.CommandService"
+            android:exported="false"
+            android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.imlib.push.PushReceiver"
+            android:exported="false"
+            android:process="io.rong.push">
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.push.PushMessageReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <!-- end RongCloud imlib request -->
+
+
+        <!-- 友盟工具集成配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/umeng_app_key" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${umengChannel}" />
+
+        <!-- 自动更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/qq_sso_app_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟工具集成配置 END -->
+
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="@string/sign_in"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SignInGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.fragment.userInfo.AddInterestFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragment.labelstory.ShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SettingAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingLabelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingPrivacyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SelectRegionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.Dialog.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.SelectRegionByListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.Dialog.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.chatting.ChattingUI"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.chatting.GroupChattingUI"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SelectImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MultiSelectImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragment.image.SelectPhotoImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AvatarUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OAuthBindAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FragmentContainerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragment.userInfo.FadingActionBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FadingActionBar" />
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.fragment.labelstory.SendLabelStoryFragment"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.fragment.labelstory.LabelStoryDetailPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.fragment.labelstory.LabelStoryDetailViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.fragment.get.GetViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".ui.activity.ImageViewSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".ui.fragment.image.SelectThrowPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UploadAlbumPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.confide.EditConfideActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.fragment.mood.MoodUserListFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.fragment.confide.ConfideDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".ui.fragment.confide.ShowConfideRoleFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.InputCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.LoginPromptActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.Dialog.NoTitle" />
+        <activity
+            android:name=".banknote.ui.FaceBanknoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity
+            android:name=".banknote.ui.CropPhotoAvatarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar" />
+        <activity android:name=".ui.fragment.voice.VoicePushUI"
+            android:screenOrientation="portrait"
+            android:theme="@style/LCTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.fragment.voice.MusicListUI"
+            android:screenOrientation="portrait"
+            android:theme="@style/Musictranslucent" />
+        <!-- end activity -->
+
+
+        <!-- register provider -->
+        <provider
+            android:name=".data.ChatProvider"
+            android:authorities="${applicationId}.data.ChatProvider"
+            android:exported="false"
+            android:process=":core" />
+        <provider
+            android:name=".data.ContactProvider"
+            android:authorities="${applicationId}.data.ContactProvider"
+            android:exported="false"
+            android:process=":core" />
+        <provider
+            android:name=".data.SystemPushProvider"
+            android:authorities="${applicationId}.data.SystemPushProvider"
+            android:exported="false"
+            android:process=":core" />
+        <provider
+            android:name=".settings.SettingsProvider"
+            android:authorities="${applicationId}.settings"
+            android:exported="false"
+            android:process=":core" />
+        <!-- end provider -->
+
+
+        <!-- register service -->
+        <service
+            android:name=".coreservice.CoreService"
+            android:exported="false"
+            android:process=":core" />
+        <service android:name=".BootCompleteService" />
+        <service android:name=".notificationcenter.NotificationService" />
+        <service android:name=".notificationcenter.NotificationIntentService" />
+        <!-- end service -->
+
+
+        <!-- register receiver -->
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".notificationcenter.NotificationIntentReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".guard.GuardReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="${applicationId}.action.SERVICE_DEAD" />
+            </intent-filter>
+        </receiver>
+        <!-- end receiver -->
+    </application>
+</manifest>

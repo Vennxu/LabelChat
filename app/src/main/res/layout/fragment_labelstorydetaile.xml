@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            >
+    <LinearLayout
+        android:id="@+id/comment_input_detiallinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:orientation="vertical">
+    <com.ekuater.labelchat.ui.fragment.labelstory.CustomListView
+        android:id="@+id/comment_input_detiallist"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"/>
+
+    <include
+        android:id="@+id/comment_input_bar"
+        layout="@layout/comment_ui_input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <include
+        layout="@layout/chatting_ui_emoji_selector"
+        android:visibility="gone"/>
+    </LinearLayout>
+    <include
+        layout="@layout/layout_story_loading"/>
+</RelativeLayout>

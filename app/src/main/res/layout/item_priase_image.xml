@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.labelchat.ui.widget.CircleImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/praise_user"
+    android:layout_width="30dp"
+    android:layout_height="30dp"/>

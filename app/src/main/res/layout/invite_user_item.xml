@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <com.ekuater.labelchat.ui.widget.CircleImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="@dimen/normal_avatar_width"
+        android:layout_height="@dimen/normal_avatar_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/contact_single"
+        app:border_color="@color/white"
+        app:border_width="1px" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar_image"
+        android:maxWidth="140dp"
+        android:singleLine="true"
+        android:text="@string/user_name_sample"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/remind_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nickname"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/nickname"
+        android:text="@string/invite_message"
+        android:textColor="@color/colorLightDark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nickname"
+        android:layout_below="@+id/nickname"
+        android:layout_marginTop="5dp"
+        android:text="@string/date_sample"
+        android:textColor="@color/colorLightDark"
+        android:textSize="12sp" />
+</RelativeLayout>

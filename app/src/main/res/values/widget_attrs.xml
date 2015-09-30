@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- flow layout -->
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalGap" format="dimension" />
+        <attr name="verticalGap" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+        <attr name="maxLines" format="integer" />
+        <attr name="moreDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalGap" format="dimension" />
+        <attr name="layout_verticalGap" format="dimension" />
+    </declare-styleable>
+    <!-- end flow layout -->
+
+    <!-- circle image -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow_color" format="color" />
+    </declare-styleable>
+    <!-- end circle image -->
+
+    <declare-styleable name="SlipButton">
+        <attr name="bg" format="reference" />
+        <attr name="slipImg" format="reference" />
+        <attr name="slipOn" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="functionButtonDrawable" format="reference|color" />
+        <attr name="isButtonFunction" format="boolean" />
+    </declare-styleable>
+
+    <!-- for UserLabelShowView attrs-->
+    <declare-styleable name="LabelShowView">
+        <attr name="leftLeafDrawable" format="reference" />
+        <attr name="leftLeafTextColor" format="reference|color" />
+        <attr name="leftLeafTextSize" format="dimension" />
+        <attr name="leftBranchDrawable" format="reference" />
+        <attr name="leftBranchWidth" format="dimension" />
+
+        <attr name="rightLeafDrawable" format="reference" />
+        <attr name="rightLeafTextColor" format="reference|color" />
+        <attr name="rightLeafTextSize" format="dimension" />
+        <attr name="rightBranchDrawable" format="reference" />
+        <attr name="rightBranchWidth" format="dimension" />
+
+        <attr name="sameDateLabelDist" format="dimension" />
+
+        <attr name="timeLineDotDrawable" format="reference" />
+        <attr name="timeLineDotDist" format="dimension" />
+
+        <attr name="monthTextSize" format="dimension" />
+        <attr name="monthTextColor" format="color" />
+        <attr name="dateTextSize" format="dimension" />
+        <attr name="dateTextColor" format="color" />
+        <attr name="timeShowGap" format="dimension" />
+    </declare-styleable>
+
+    <!-- for contact sidebar -->
+    <declare-styleable name="LetterSideBar">
+        <attr name="letterTextSize" format="dimension" />
+        <attr name="normalLetterColor" format="color" />
+        <attr name="chosenLetterColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxSizeScrollView">
+        <attr name="maxWidth" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="reference|color" />
+        <attr name="pstsTabTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="bold_italic" value="3" />
+        </attr>
+        <attr name="pstsTabSelectedTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="bold_italic" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PieView">
+        <attr name="pinned" format="boolean" />
+        <attr name="progresss" format="integer" />
+        <attr name="maxs" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="progresssColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WrapRatingBar">
+        <attr name="sampleTile" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="startAngle" format="float" />
+        <attr name="max" />
+        <attr name="progress" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBarView">
+        <attr name="number_progress" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

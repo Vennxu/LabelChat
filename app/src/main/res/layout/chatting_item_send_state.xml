@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_item_send_state"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chatting_item_send_state_sending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/chatting_item_send_state_sending_content_description"
+        android:src="@drawable/chatting_item_send_state_sending" />
+
+    <ImageView
+        android:id="@+id/chatting_item_send_state_send_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/chatting_item_send_state_send_failed_content_description"
+        android:src="@drawable/chatting_item_send_state_send_failed" />
+</FrameLayout>

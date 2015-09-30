@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ekuater.labelchat.ui.widget.LabelView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LabelTextStyle"
+    android:text="@string/label_sample_0" />

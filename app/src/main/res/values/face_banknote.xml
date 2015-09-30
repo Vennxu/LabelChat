@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="banknotes">
+        <item>@array/rmb_1yuan</item>
+        <item>@array/rmb_5yuan</item>
+        <item>@array/rmb_10yuan</item>
+        <item>@array/rmb_20yuan</item>
+        <item>@array/rmb_50yuan</item>
+        <item>@array/rmb_100yuan</item>
+        <item>@array/rmb_200yuan</item>
+        <item>@array/rmb_500yuan</item>
+    </array>
+
+    <string-array name="rmb_1yuan" translatable="false">
+        <item>rmb_1yuan.png</item>
+        <item>270,6</item>
+        <item>120,150</item>
+        <item>#8b9f60</item>
+    </string-array>
+
+    <string-array name="rmb_5yuan" translatable="false">
+        <item>rmb_5yuan.png</item>
+        <item>295,6</item>
+        <item>120,150</item>
+        <item>#cabff1</item>
+    </string-array>
+
+    <string-array name="rmb_10yuan" translatable="false">
+        <item>rmb_10yuan.png</item>
+        <item>260,6</item>
+        <item>120,150</item>
+        <item>#74919c</item>
+    </string-array>
+
+    <string-array name="rmb_20yuan" translatable="false">
+        <item>rmb_20yuan.png</item>
+        <item>275,6</item>
+        <item>120,150</item>
+        <item>#9c8774</item>
+    </string-array>
+
+    <string-array name="rmb_50yuan" translatable="false">
+        <item>rmb_50yuan.png</item>
+        <item>295,6</item>
+        <item>120,150</item>
+        <item>#749c82</item>
+    </string-array>
+
+    <string-array name="rmb_100yuan" translatable="false">
+        <item>rmb_100yuan.png</item>
+        <item>264,9</item>
+        <item>120,150</item>
+        <item>#c37085</item>
+    </string-array>
+
+    <string-array name="rmb_200yuan" translatable="false">
+        <item>rmb_200yuan.png</item>
+        <item>264,9</item>
+        <item>120,150</item>
+        <item>#96bfc2</item>
+    </string-array>
+
+    <string-array name="rmb_500yuan" translatable="false">
+        <item>rmb_500yuan.png</item>
+        <item>264,9</item>
+        <item>120,150</item>
+        <item>#84a2d7</item>
+    </string-array>
+</resources>

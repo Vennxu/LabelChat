@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="confide_image_value">
+        <item>@drawable/confide_bg_1</item>
+        <item>@drawable/confide_bg_2</item>
+        <item>@drawable/confide_bg_3</item>
+        <item>@drawable/confide_bg_4</item>
+        <item>@drawable/confide_bg_5</item>
+        <item>@drawable/confide_bg_6</item>
+        <item>@drawable/confide_bg_7</item>
+        <item>@drawable/confide_bg_8</item>
+        <item>@drawable/confide_bg_9</item>
+        <item>@drawable/confide_bg_10</item>
+        <item>@drawable/confide_bg_11</item>
+        <item>@drawable/confide_bg_12</item>
+        <item>@drawable/confide_bg_13</item>
+        <item>@drawable/confide_bg_14</item>
+        <item>@drawable/confide_bg_15</item>
+    </array>
+
+    <string-array name="confide_image_key">
+        <item>confide_bg_1</item>
+        <item>confide_bg_2</item>
+        <item>confide_bg_3</item>
+        <item>confide_bg_4</item>
+        <item>confide_bg_5</item>
+        <item>confide_bg_6</item>
+        <item>confide_bg_7</item>
+        <item>confide_bg_8</item>
+        <item>confide_bg_9</item>
+        <item>confide_bg_10</item>
+        <item>confide_bg_11</item>
+        <item>confide_bg_12</item>
+        <item>confide_bg_13</item>
+        <item>confide_bg_14</item>
+        <item>confide_bg_15</item>
+    </string-array>
+</resources>

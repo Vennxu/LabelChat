@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/personal_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <com.ekuater.labelchat.ui.widget.CircleImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/temp_small_pics_1"
+            app:border_color="@color/white"
+            app:border_width="1px" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_female" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/gender"
+                android:layout_toRightOf="@+id/gender"
+                android:text="@string/user_name_sample"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/distance_sample"
+                android:textColor="#FF000000"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ekuater.labelchat.ui.widget.MaxSizeScrollView
+        android:id="@+id/label_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <com.ekuater.labelchat.ui.widget.LabelFlow
+            android:id="@+id/user_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_info_area"
+            app:horizontalGap="15dp"
+            app:orientation="horizontal"
+            app:verticalGap="10dp" />
+    </com.ekuater.labelchat.ui.widget.MaxSizeScrollView>
+    <TextView
+        android:id="@+id/validated_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btn_submit_disable"
+        android:gravity="center"
+        android:text="@string/already_reject"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/normal_title" />
+    </FrameLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/labelstory_fragment_all_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+        <RelativeLayout
+            android:id="@+id/labelstory_fragment_all_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/labelstory_fragment_all_driver"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="33dp"
+                android:background="@color/story_driver" />
+
+            <com.ekuater.labelchat.ui.fragment.labelstory.CustomListView
+                android:id="@+id/labelstory_fragment_all_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="afterDescendants"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+            <include
+                android:id="@+id/labelstory_input_all_layout"
+                layout="@layout/labelstory_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/labelstory_fragment_all_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/labelstory_fragment_all_nodate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/labelstory_null"
+            android:textColor="@color/colorLightDark"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

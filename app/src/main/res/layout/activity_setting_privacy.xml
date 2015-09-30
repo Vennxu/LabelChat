@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_default_verify" />
+	
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView1"        
+        style="@style/SettingItemDividerStyle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_mobile_seek" />
+    
+     <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView2"        
+        style="@style/SettingItemDividerStyle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_unfamiliar_exact_search" />
+    
+     <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView3"        
+        style="@style/SettingItemDividerStyle" />
+    
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_shield_bubbling" />
+
+      <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView4"        
+        style="@style/SettingItemDividerStyle" />
+     
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_nearby_search" />
+
+     <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView5"        
+        style="@style/SettingItemDividerStyle" />
+    
+     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view5"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_recommed_stranger" />
+       
+      <View
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView6"        
+        style="@style/SettingItemDividerStyle" />
+     
+     <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view6"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_pri_blaklist" />
+
+      <View
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView7"        
+        style="@style/SettingItemDividerStyle" />
+
+      <ToggleButton
+          android:id="@+id/set_priv_switch01"
+          android:layout_alignBottom="@+id/textView1"
+          style="@style/SettingToggenStyle" >
+      </ToggleButton>
+
+      <ToggleButton
+          android:id="@+id/set_priv_switch04"
+          android:layout_alignBottom="@+id/textView4"
+          style="@style/SettingToggenStyle" >
+      </ToggleButton>
+
+      <ToggleButton
+          android:id="@+id/set_priv_switch05"
+          android:layout_alignBottom="@+id/textView5"
+          style="@style/SettingToggenStyle" >
+      </ToggleButton>
+
+       <ToggleButton
+           android:id="@+id/set_priv_switch03"
+           android:layout_alignBottom="@+id/textView3"
+           style="@style/SettingToggenStyle">
+       </ToggleButton>
+
+       <ToggleButton
+           android:id="@+id/set_priv_switch02"
+           android:layout_alignBottom="@+id/textView2"
+           style="@style/SettingToggenStyle" />
+
+       <ToggleButton
+           android:id="@+id/set_priv_switch06"
+           android:layout_alignBottom="@+id/textView6"
+           style="@style/SettingToggenStyle"/>
+
+</RelativeLayout>

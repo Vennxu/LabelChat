@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_item_voice_message_block"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:minWidth="@dimen/chatting_item_voice_message_min_width">
+
+    <TextView
+        android:id="@+id/chatting_item_voice_time_text"
+        style="@style/ChatItemSendContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/chatting_item_voice_play_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:contentDescription="@string/chatting_item_voice_play_anim_content_description"
+        android:src="@drawable/chatting_item_send_voice_playing" />
+
+    <ImageView
+        android:id="@+id/chatting_item_voice_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:contentDescription="@string/chatting_item_voice_anim_content_description"
+        android:src="@drawable/chatting_item_send_playing_animation"
+        android:visibility="gone" />
+
+</FrameLayout>

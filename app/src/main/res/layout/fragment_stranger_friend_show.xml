@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/normal_title" />
+
+    <RelativeLayout
+        android:id="@+id/strange_friend_show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/friend_group_list">
+
+        <com.ekuater.labelchat.ui.widget.StrangerFriendGridView
+            android:id="@+id/stranger_friend_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="2dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/load_more_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_match_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_search_no_data"
+            android:text="@string/sorry_no_this_label_user"
+            android:textColor="@color/colorRemarks"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.ekuater.labelchat.ui.widget.GroupFriendListView
+        android:id="@+id/friend_group_list"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:background="#606060"
+        android:listSelector="@color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="visible" />
+
+</RelativeLayout>

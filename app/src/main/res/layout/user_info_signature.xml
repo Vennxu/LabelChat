@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:text="@string/signature"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/show_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:minHeight="30dp"
+            android:textColor="@color/colorLightDark"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/signature_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="75dp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/signature_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:minHeight="30dp"
+                android:textColor="@color/colorLightDark"
+                android:textSize="16sp" />
+            </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorRemarks" />
+
+</LinearLayout>

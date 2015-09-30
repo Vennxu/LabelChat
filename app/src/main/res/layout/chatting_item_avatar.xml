@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ekuater.labelchat.ui.widget.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatting_item_avatar"
+    android:layout_width="@dimen/chatting_item_icon_width"
+    android:layout_height="@dimen/chatting_item_icon_height"
+    android:layout_gravity="center_horizontal|top"
+    android:background="@null"
+    android:clickable="true"
+    android:contentDescription="@string/chatting_item_icon_content_description"
+    android:focusable="true"
+    android:gravity="center"
+    android:src="@drawable/contact_single"
+    app:border_color="@color/white"
+    app:border_width="1px" />

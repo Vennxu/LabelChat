@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ekuater.labelchat.ui.widget.PagerSlidingTabStrip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pager_tab"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_below="@id/title_bar"
+    android:background="@color/white"
+    app:pstsDividerColor="@color/transparent"
+    app:pstsIndicatorColor="#FF7486BD"
+    app:pstsIndicatorHeight="2dp"
+    app:pstsShouldExpand="true"
+    app:pstsTabBackground="@color/transparent"
+    app:pstsTabPaddingLeftRight="0dp"
+    app:pstsTabSelectedTextStyle="bold"
+    app:pstsTabTextColor="@color/main_pager_sliding_tab_text_color"
+    app:pstsTabTextSize="14sp"
+    app:pstsTabTextStyle="normal"
+    app:pstsUnderlineColor="@color/divider"
+    app:pstsUnderlineHeight="1px" />

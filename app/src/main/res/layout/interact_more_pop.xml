@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/interact_one"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/interact_me_too"
+            android:textColor="@color/black"
+            android:background="@drawable/label_event_bg"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/emoji_f_static_1_10"/>
+
+        <TextView
+            android:id="@+id/interact_two"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/interact_cattle_true_cow"
+            android:textColor="@color/black"
+            android:background="@drawable/label_event_bg"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/emoji_f_static_4_200"/>
+
+        <TextView
+            android:id="@+id/interact_three"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/interact_the_case"
+            android:textColor="@color/black"
+            android:background="@drawable/label_event_bg"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/emoji_f_static_2_130"/>
+
+    </LinearLayout>
+</LinearLayout>

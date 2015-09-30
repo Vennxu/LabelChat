@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="emoji_cell_image_content_description" translatable="false">emoji cell</string>
+    <string name="emoji_keyboard_back_space_content_description" translatable="false">emoji back space</string>
+    <string name="emoji_tab_recent_no_recent_text">暂无</string>
+
+    <string name="emoji_icon_static_prefix" translatable="false">emoji_f_static_</string>
+    <string name="emoji_icon_dynamic_prefix" translatable="false">emoji_f_dynamic_</string>
+    <string name="emoji_icon_parse_start_char" translatable="false">[</string>
+    <string name="emoji_icon_parse_end_char" translatable="false">]</string>
+
+    <array name="emoji_key_array">
+        <item>@array/label_emoji_key</item>
+    </array>
+
+    <array name="emoji_value_array">
+        <item>@array/label_emoji_key</item>
+    </array>
+
+    <string-array name="label_emoji_key" translatable="false">
+        <item>1_10</item>
+        <item>1_20</item>
+        <item>1_30</item>
+        <item>1_40</item>
+        <item>1_50</item>
+        <item>1_60</item>
+        <item>1_70</item>
+        <item>1_80</item>
+        <item>1_90</item>
+        <item>1_100</item>
+        <item>1_110</item>
+        <item>1_120</item>
+        <item>1_130</item>
+        <item>1_140</item>
+        <item>1_150</item>
+        <item>1_160</item>
+        <item>1_170</item>
+        <item>1_180</item>
+        <item>1_190</item>
+        <item>1_200</item>
+        <item>2_10</item>
+        <item>2_20</item>
+        <item>2_30</item>
+        <item>2_40</item>
+        <item>2_50</item>
+        <item>2_60</item>
+        <item>2_70</item>
+        <item>2_80</item>
+        <item>2_90</item>
+        <item>2_100</item>
+        <item>2_110</item>
+        <item>2_120</item>
+        <item>2_130</item>
+        <item>2_140</item>
+        <item>2_150</item>
+        <item>2_160</item>
+        <item>2_170</item>
+        <item>2_180</item>
+        <item>2_190</item>
+        <item>2_200</item>
+        <item>3_10</item>
+        <item>3_20</item>
+        <item>3_30</item>
+        <item>3_40</item>
+        <item>3_50</item>
+        <item>3_60</item>
+        <item>3_70</item>
+        <item>3_80</item>
+        <item>3_90</item>
+        <item>3_100</item>
+        <item>3_110</item>
+        <item>3_120</item>
+        <item>3_130</item>
+        <item>3_140</item>
+        <item>3_150</item>
+        <item>3_160</item>
+        <item>3_170</item>
+        <item>3_180</item>
+        <item>3_190</item>
+        <item>3_200</item>
+        <item>4_10</item>
+        <item>4_20</item>
+        <item>4_30</item>
+        <item>4_40</item>
+        <item>4_50</item>
+        <item>4_60</item>
+        <item>4_70</item>
+        <item>4_80</item>
+        <item>4_90</item>
+        <item>4_100</item>
+        <item>4_110</item>
+        <item>4_120</item>
+        <item>4_130</item>
+        <item>4_140</item>
+        <item>4_150</item>
+        <item>4_160</item>
+        <item>4_170</item>
+        <item>4_180</item>
+        <item>4_190</item>
+        <item>4_200</item>
+        <item>5_10</item>
+        <item>5_20</item>
+        <item>5_30</item>
+        <item>5_40</item>
+        <item>5_50</item>
+        <item>5_60</item>
+        <item>5_70</item>
+        <item>5_80</item>
+        <item>5_90</item>
+        <item>5_100</item>
+        <item>5_110</item>
+        <item>5_120</item>
+        <item>5_130</item>
+        <item>5_140</item>
+        <item>5_150</item>
+        <item>5_160</item>
+        <item>5_170</item>
+        <item>5_180</item>
+        <item>5_190</item>
+        <item>5_200</item>
+        <item>6_10</item>
+        <item>6_20</item>
+        <item>6_30</item>
+        <item>6_40</item>
+        <item>6_50</item>
+        <item>6_60</item>
+        <item>6_70</item>
+        <item>6_80</item>
+        <item>6_90</item>
+        <item>6_100</item>
+        <item>6_110</item>
+        <item>6_120</item>
+        <item>6_130</item>
+        <item>6_140</item>
+        <item>6_150</item>
+        <item>6_160</item>
+        <item>6_170</item>
+        <item>6_180</item>
+        <item>6_190</item>
+        <item>6_200</item>
+    </string-array>
+</resources>

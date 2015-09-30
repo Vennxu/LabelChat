@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/main_normal_title" />
+
+    <TextView
+        android:id="@+id/network_available_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:background="#FFF6EBE6"
+        android:drawableLeft="@drawable/ic_error"
+        android:gravity="left|center_vertical"
+        android:padding="8dp"
+        android:text="@string/network_not_available_hint"
+        android:textColor="#FF000000"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/network_available_hint"
+        android:background="@color/white"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1px" />
+</RelativeLayout>

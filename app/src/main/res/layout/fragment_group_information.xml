@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:layout_marginRight="10dp"
+   android:layout_marginLeft="10dp"
+
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+
+            <com.ekuater.labelchat.ui.widget.GroupInformationGridView
+                android:id="@+id/group_friend_info_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="12dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="2dp" />
+            <Button
+                android:id="@+id/exit_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_btn_exit_group_selector"
+                android:gravity="center"
+                android:text="@string/exitGroup"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/groupinfo_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tab" />
+
+    <include
+        android:id="@+id/main_tab"
+        layout="@layout/main_tab_bar" />
+
+    <View
+        android:id="@+id/action_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BF000000" />
+
+    <FrameLayout
+        android:id="@+id/action_attach_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/main_tab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/main_tab"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_button" />
+    </FrameLayout>
+      <include layout="@layout/main_tab_bar_new" />
+</RelativeLayout>

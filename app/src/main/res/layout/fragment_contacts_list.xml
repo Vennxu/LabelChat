@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contacts_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/page_selector"
+        android:background="@color/gray">
+
+        <com.ekuater.labelchat.ui.widget.LetterSideBar
+            android:id="@+id/letter_side_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/letter_side_bar_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:chosenLetterColor="@color/colorRemarks"
+            app:letterTextSize="14sp"
+            app:normalLetterColor="@color/colorRemarks" />
+
+        <ListView
+            android:id="@+id/contacts_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/letter_side_bar"
+            android:layout_toStartOf="@id/letter_side_bar"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/title_layout_no_friends"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/letter_side_bar"
+            android:layout_toStartOf="@id/letter_side_bar"
+            android:background="#2FFFFFFF"
+            android:gravity="center"
+            android:text="@string/no_match_contact"
+            android:textColor="#454545"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/letter_prompt_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/no_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no_friend" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/method_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/page_selector"
+        android:background="@color/gray"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1px" />
+
+    <RadioGroup
+        android:id="@+id/page_selector"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_method"
+            style="@style/ContactPageRadioStyle"
+            android:checked="true"
+            android:text="@string/message" />
+
+        <RadioButton
+            android:id="@+id/radio_contact"
+            style="@style/ContactPageRadioStyle"
+            android:text="@string/contact" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatting_list_item"
+    style="@style/ChatItemUIStyle">
+
+    <View
+        android:id="@+id/division_height"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chatting_item_start_datetime_gap" />
+
+    <include layout="@layout/chatting_item_datetime" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chatting_item_datetime_message_gap" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="@dimen/chatting_item_recv_message_margin_start"
+        android:layout_marginRight="@dimen/chatting_item_recv_message_margin_end"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <include layout="@layout/chatting_item_avatar" />
+
+        <Space
+            android:layout_width="@dimen/chatting_item_icon_content_gap"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/chatting_item_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/chatting_item_recv_content_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/chatting_item_content_min_height">
+
+            <ViewStub
+                android:id="@+id/chatting_item_emoji_message_block_stub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout="@layout/chatting_item_emoji_recv_message_block" />
+
+            <ViewStub
+                android:id="@+id/chatting_item_voice_message_block_stub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout="@layout/chatting_item_voice_recv_message_block" />
+
+            <ViewStub
+                android:id="@+id/chatting_item_image_message_block_stub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout="@layout/chatting_item_image_message_block" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/gap"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>

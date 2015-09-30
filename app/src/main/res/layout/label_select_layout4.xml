@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/label_select_text1"
+        style="@style/LabelSelectTextStyle"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/circle_select_202" />
+
+    <TextView
+        android:id="@id/label_select_text2"
+        style="@style/LabelSelectTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/circle_select_178" />
+
+    <TextView
+        android:id="@id/label_select_text3"
+        style="@style/LabelSelectTextStyle"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="211dp"
+        android:background="@drawable/circle_select_224" />
+
+    <TextView
+        android:id="@id/label_select_text4"
+        style="@style/LabelSelectTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="63dp"
+        android:layout_marginTop="182dp"
+        android:background="@drawable/circle_select_154" />
+</RelativeLayout>

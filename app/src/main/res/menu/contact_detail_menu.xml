@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/operation_menu"
+        android:icon="@drawable/lc_ic_menu_moreoverflow_ab"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/modify_remark">
+        <menu>
+            <item
+                android:id="@+id/modify_remark"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/modify_remark" />
+            <item
+                android:id="@+id/delete_friend"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/delete_friend" />
+            <item
+                android:id="@+id/recommend_label"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/recommend_label" />
+        </menu>
+    </item>
+</menu>

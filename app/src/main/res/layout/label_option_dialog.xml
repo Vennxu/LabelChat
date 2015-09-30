@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/label_normal"
+            android:gravity="center"
+            android:text="@string/modify"
+            android:textColor="@color/colorLabelTextDark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <TextView
+        android:id="@+id/add_label"
+        style="@style/DialogOperationTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_as_my_label" />
+
+    <include layout="@layout/dialog_horizontal_divider" />
+
+    <TextView
+        android:id="@+id/close"
+        style="@style/DialogOperationTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

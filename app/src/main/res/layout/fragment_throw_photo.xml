@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF313131"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/normal_title" />
+
+    <ImageView
+        android:id="@+id/throw_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/throw_anim" />
+
+    <TextView
+        android:id="@+id/select_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/throw_photo_btn_selector"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:minWidth="220dp"
+        android:text="@string/select_one_photo"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/throw_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:minWidth="220dp"
+        android:text="@string/throw_photo_out"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dip"
+    android:background="@drawable/emoji_ic_ime_bg"
+    android:orientation="vertical" >
+
+    <com.ekuater.labelchat.ui.widget.emoji.CustomViewPager
+        android:id="@+id/emoji_keyboard_parent_pager"
+        android:layout_width="match_parent"
+        android:layout_height="170dip"
+        android:background="#fff0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <com.ekuater.labelchat.ui.activity.chatting.emoji.PagerSlidingTabStrip
+            android:id="@+id/emoji_keyboard_tabs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            app:pstsIndicatorColor="@android:color/white"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="2dp" />
+
+        <ImageButton
+            android:id="@+id/emoji_keyboard_back_space"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/emoji_ic_background_tab"
+            android:contentDescription="@string/emoji_keyboard_back_space_content_description"
+            android:src="@drawable/emoji_ic_delete" />
+    </LinearLayout>
+
+</LinearLayout>

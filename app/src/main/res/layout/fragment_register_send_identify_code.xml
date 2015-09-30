@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="44dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/register_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_selector"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="@integer/mobile_length"
+        android:textColor="@color/black"
+        android:textColorHint="#ff808080"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_phone_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_btn_selector"
+        android:clickable="true"
+        android:text="@string/send_identify_code"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/privacy_agreement_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_submit"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/register_phone_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="38dp"
+            android:checked="true"
+            android:text="@string/read_and_agree"
+            android:textColor="#ff606060" />
+
+        <TextView
+            android:id="@+id/register_phone_privacy_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/register_phone_agree"
+            android:text="@string/privacy_agreement"
+            android:textColor="#ffff6000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/register_phone_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/register_phone_privacy_agreement"
+            android:text="@string/terms"
+            android:textColor="#ffff6000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

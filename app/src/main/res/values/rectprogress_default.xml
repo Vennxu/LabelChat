@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_rect_initColor">#cccccc</color>
+    <color name="default_rect_progressColor">#66cd00</color>
+    <color name="default_rect_borderColor">#B5B5B5</color>
+    <dimen name="default_rect_borderWidth">0dp</dimen>
+    <color name="default_rect_textColor">#ffffff</color>
+
+    <dimen name="default_rect_textSize">12dp</dimen>
+
+    <integer name="default_rect_progress">0</integer>
+    <integer name="default_rect_max">100</integer>
+
+    <dimen name="default_rect_radius">0dp</dimen>
+
+</resources>

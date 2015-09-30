@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.ekuater.labelchat.ui.widget.CircleImageView
+            android:id="@+id/confide_detaile_item_tx"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/confide_female"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <com.ekuater.labelchat.ui.widget.emoji.ShowContentTextView
+                android:id="@+id/confide_detaile_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:text="@string/abandon"/>
+            <LinearLayout
+                android:id="@+id/confide_detaile_item_reply_backgroud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/confide_to_bg">
+                <com.ekuater.labelchat.ui.widget.emoji.ShowContentTextView
+                    android:id="@+id/confide_detaile_item_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/story_content"
+                    android:text="回复8楼：我糙。。。。。。"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/confide_detaile_item_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/story_time"
+            android:layout_gravity="left"
+            android:text="9楼"/>
+
+        <TextView
+            android:id="@+id/confide_detaile_item_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/story_time"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            android:text="深圳"/>
+
+        <TextView
+            android:id="@+id/confide_detaile_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/story_time"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:text="3小时前"/>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/normal_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/pick_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo_sample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/banknote_sample" />
+
+            <TextView
+                android:id="@+id/sample_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_sample"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/banknote_pick_avatar_photo_tip"
+                android:textColor="@color/lcColorGray"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/pick_photo"
+                style="@style/LargeButtonStyle"
+                android:layout_below="@+id/sample_tip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/send_btn_selector"
+                android:text="@string/banknote_pick_avatar_photo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/banknote_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/send_btn_area"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/banknote_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/banknote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pic_loading" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/story_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/banknote_content_hint"
+                    android:maxHeight="100dp"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/send_btn_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/weixin_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/face_banknote_share_bg"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        style="@style/LargeButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_share_wxcircle_78"
+                        android:drawableStart="@drawable/ic_share_wxcircle_78"
+                        android:gravity="center"
+                        android:text="@string/share_to_weixin_circle"
+                        android:textColor="#FF66CC01" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/weixin_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/face_banknote_share_bg"
+                    android:minHeight="50dp">
+
+                    <TextView
+                        style="@style/LargeButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_share_weixin_78"
+                        android:drawableStart="@drawable/ic_share_weixin_78"
+                        android:gravity="center"
+                        android:text="@string/share_to_weixin_friend"
+                        android:textColor="#FF66CC01" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/try_again"
+                    style="@style/LargeButtonStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/face_banknote_again_bg"
+                    android:minHeight="50dp"
+                    android:text="@string/face_banknote_again"
+                    android:textColor="#FF7486BD" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

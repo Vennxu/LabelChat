@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:layout_gravity="center"
+    >
+        <com.ekuater.labelchat.ui.fragment.labelstory.RoundImageView
+            android:id="@+id/category_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/conners"
+            />
+
+        <TextView
+            android:id="@+id/category_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdf"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/category_item_text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdf"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            />
+        </FrameLayout>
+
+</FrameLayout>

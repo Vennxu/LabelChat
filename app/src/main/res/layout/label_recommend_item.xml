@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LabelTextStyle"
+    android:background="@drawable/praise_label_different"
+    android:text="@string/recommend_label"
+    android:textSize="18sp" />

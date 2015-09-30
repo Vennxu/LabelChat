@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.ekuater.labelchat.ui.widget.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@id/title_bar"
+        style="@style/NormalTitleBarStyle"
+        android:layout_height="80dp"
+        android:background="@color/albumGalleryFunCover">
+
+        <TextView
+            style="@style/NormalTitleStyle"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/albumGalleryFunCover"
+        android:baselineAligned="false"
+        android:minHeight="50dp">
+
+        <ImageView
+            android:id="@+id/keep_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keep_image"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right|center_vertical"/>
+
+    </FrameLayout>
+</RelativeLayout>

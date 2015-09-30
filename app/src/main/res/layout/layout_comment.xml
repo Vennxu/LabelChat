@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/comment_praise_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/comment_praise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_praise_user_normal" />
+
+        <com.ekuater.labelchat.ui.widget.FlowLayout
+            android:id="@+id/comment_praise_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comment_praise"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/comment_tag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/comment_tag_bg"
+        android:gravity="center_vertical"
+        android:textColor="@color/story_grey"
+        android:paddingLeft="5dp"
+        android:text="@string/labelstroy_input_comment_hint" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

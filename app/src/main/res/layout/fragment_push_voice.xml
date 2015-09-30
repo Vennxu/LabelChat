@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekuater.labelchat.ui.fragment.labelstory.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/normal_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/push_voice_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/push_voice_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_bar">
+
+                <com.ekuater.labelchat.ui.widget.CircleImageView
+                    android:id="@+id/push_voice_cd"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sound_record_cd" />
+
+                <com.ekuater.labelchat.ui.widget.CircleImageView
+                    android:id="@+id/push_voice_tx"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contact_single" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/push_voice_decript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/push_voice_fragment"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/push_voice_auther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="歌名：未知" />
+
+                <TextView
+                    android:id="@+id/push_voice_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="演唱者：未知" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/push_voice_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="00:00/00:00"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="#eeeeee">
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:layout_gravity="top"-->
+                    <!--android:background="@color/story_grey" />-->
+
+                <ImageView
+                    android:id="@+id/import_music"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_music_search" />
+
+                <Button
+                    android:id="@+id/push_voice_send"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/music_send_selector"
+                    android:enabled="false" />
+
+                <EditText
+                    android:id="@+id/push_voice_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/push_voice_send"
+                    android:layout_toRightOf="@id/import_music"
+                    android:background="@drawable/role_search"
+                    android:gravity="center"
+                    android:hint="@string/voice_push_hint"
+                    android:textSize="14sp"
+                    android:maxLength="30" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/push_player"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/push_voice_linear"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/push_player_restart"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableTop="@drawable/record_again"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/voice_restart"-->
+    <!--android:textSize="18sp"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/push_player_operation"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableTop="@drawable/record_play"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/voice_player"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/push_player_finish"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableTop="@drawable/record_stop"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/voice_player_restart"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/push_voice"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/push_voice_linear"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:visibility="visible">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/push_voice_restart"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/voice_restart"-->
+    <!--android:textSize="18sp"-->
+    <!--android:visibility="invisible" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/push_voice_operation"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:src="@drawable/sound_record_off"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/push_voice_finish"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/voice_finish"-->
+    <!--android:textSize="18sp"-->
+    <!--android:visibility="invisible" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/import_music"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/push_voice_time"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:textSize="18sp"-->
+    <!--android:text="@string/import_music" />-->
+
+    <com.ekuater.labelchat.ui.fragment.voice.NumberProgressBar
+        android:id="@+id/number_progressBar"
+        style="@style/NumberProgressBar_Default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:visibility="gone" />
+
+
+</com.ekuater.labelchat.ui.fragment.labelstory.KeyboardListenRelativeLayout>

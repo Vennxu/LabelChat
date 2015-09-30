@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/confide_show_item_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/send_letter_message_state">
+
+        <RelativeLayout
+            android:id="@+id/relativew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <com.ekuater.labelchat.ui.widget.CircleImageView
+                android:id="@+id/confide_show_item_tx"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_stranger_friend" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/confide_show_item_tx"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/confide_show_item_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#暖男#"
+                    android:textColor="@color/publish_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/confide_show_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3小时前"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/confide_show_item_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="深圳 南山区"
+                android:textColor="@color/confide_other"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/confide_show_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativew"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:minHeight="250dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:text="@string/confide_content_sample"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <include
+            layout="@layout/detail_operation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confide_show_item_content"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <include layout="@layout/layout_comment" />
+</LinearLayout>

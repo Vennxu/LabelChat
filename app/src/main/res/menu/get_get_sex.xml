@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sex"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="s" />
+    <!-- android:icon="@drawable/ic_search_menu" -->
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chatting_ui_input_edit_text_color">@color/black</color>
+    <color name="chatting_ui_input_bar_bg">#7FA1A1A1</color>
+    <color name="chatting_ui_input_bar_text_color">#ff727272</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chatting_item_datetime_default_text" translatable="false">08:00</string>
+    <string name="chatting_item_icon_content_description" translatable="false">chatting item icon</string>
+
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="yesterday_befor">前天</string>
+    <string name="before_dawn">凌晨</string>
+    <string name="forenoon">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="evening">晚上</string>
+    <string name="day_befor">天前</string>
+    <string name="hour_befor">小时前</string>
+    <string name="minute_befor">分钟前</string>
+    <string name="now_befor">刚刚</string>
+    <string-array name="week_days">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string name="chatting_ui_record_btn_content_description" translatable="false">chatting record btn</string>
+    <string name="chatting_ui_face_switch_btn_content_description" translatable="false">chatting face btn</string>
+    <string name="chatting_ui_input_attach_btn_content_description" translatable="false">chatting attach btn</string>
+    <string name="chatting_item_voice_play_anim_content_description" translatable="false">voice msg play animation</string>
+    <string name="chatting_item_voice_anim_content_description" translatable="false">voice msg animation</string>
+    <string name="chatting_item_image_message_block_content_description" translatable="false">image message</string>
+    <string name="chatting_item_send_state_sending_content_description">sending</string>
+    <string name="chatting_item_send_state_send_failed_content_description">send failed</string>
+
+    <string name="chatting_ui_input_send">发送</string>
+    <string name="chatting_ui_input_edit_ime_action_label">完成</string>
+    <string name="chatting_ui_image_select_action_take_picture">拍照</string>
+    <string name="chatting_ui_image_select_action_select_picture">相册</string>
+    <string name="chatting_item_delete_chat_message">删除</string>
+    <string name="chatting_content_copy">复制</string>
+
+    <string name="press_to_record">按住说话</string>
+    <string name="release_to_send">松开发送</string>
+</resources>

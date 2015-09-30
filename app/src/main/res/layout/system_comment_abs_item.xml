@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <com.ekuater.labelchat.ui.widget.CircleImageView
+        android:id="@+id/system_comment_tx"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/contact_single" />
+
+    <ImageView
+        android:id="@+id/system_new_message_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/system_comment_tx"
+        android:layout_marginTop="10dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/system_comment_additional"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/system_comment_voice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/system_comment_image_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="4"
+            android:padding="2dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/system_comment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/system_comment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/system_comment_additional"
+        android:layout_toRightOf="@+id/system_comment_tx">
+
+        <TextView
+            android:id="@+id/system_comment_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxWidth="110dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/system_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/system_comment_nickname"
+            android:textColor="@color/story_time" />
+
+        <com.ekuater.labelchat.ui.widget.emoji.EmojiTextView
+            android:id="@+id/system_comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/system_comment_nickname"
+            android:gravity="center_vertical"
+            android:maxWidth="180dp"
+            android:minHeight="30dp"
+            android:singleLine="true"
+            android:textColor="@color/story_time" />
+
+    </RelativeLayout>
+</RelativeLayout>

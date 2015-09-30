@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/modify"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_horizontal_divider"
+        android:id="@+id/linear_driver"
+        android:layout_below="@id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <FrameLayout
+        android:id="@+id/linear_center"
+        android:layout_below="@id/linear_driver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+        <com.ekuater.labelchat.ui.widget.FlowLayout
+            android:id="@+id/select_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/select_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_above="@id/linear_center"
+           android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="50dp">
+            <include layout="@layout/dialog_horizontal_divider"/>
+            <TextView
+                android:id="@+id/title_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/story_content"
+                android:textSize="18sp" />
+            </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/mood_bg">
+
+    <TextView
+        android:id="@+id/user_list_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:text="@string/fans"/>
+
+    <com.ekuater.labelchat.ui.widget.ClickEventInterceptLinear
+        android:id="@+id/user_list_group_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginRight="5dp"
+            android:text="@string/mood_select_all" />
+
+        <ImageView
+            android:id="@+id/user_list_group_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lc_btn_check"/>
+
+    </com.ekuater.labelchat.ui.widget.ClickEventInterceptLinear>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/story_grey"/>
+</RelativeLayout>
+

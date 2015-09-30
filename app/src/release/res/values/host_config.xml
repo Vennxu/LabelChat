@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="config_http_api_base_url" translatable="false">http://121.40.136.110:7788/label-api/</string>
+    <string name="config_im_server_host" translatable="false">114.215.172.144</string>
+    <integer name="config_im_server_port">17173</integer>
+
+    <string name="config_avatar_base_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/avatar/large/</string>
+    <string name="config_thumb_avatar_base_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/avatar/thumb/</string>
+    <string name="config_tmp_group_avatar_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/group/</string>
+    <string name="config_throw_photo_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/throwphoto/large/</string>
+    <string name="config_throw_photo_thumb_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/throwphoto/thumb/</string>
+    <string name="config_label_story_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/labelstory/large/</string>
+    <string name="config_label_story_thumb_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/labelstory/thumb/</string>
+    <string name="config_label_image_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/label/</string>
+    <string name="config_theme_image_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/theme/</string>
+    <string name="config_album_photo_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/album/large/</string>
+    <string name="config_album_photo_thumb_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/album/thumb/</string>
+    <string name="config_chat_room_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/chatRoom/</string>
+    <string name="config_category_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/dynamicCategory/</string>
+    <string name="config_confide_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/virtualAvata/</string>
+    <string name="config_chat_background_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/chatBackground/large/</string>
+    <string name="config_chat_background_thumb_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/chatBackground/thumb/</string>
+    <string name="config_audio_url" translatable="false">http://label-prod.oss-cn-hangzhou.aliyuncs.com/upload/voice/</string>
+
+    <string name="config_label_story_detail_url" translatable="false">http://www.ekuater.com:7788/label-api/share/storyDetail.html?labelStoryId=</string>
+    <string name="config_confide_detail_url" translatable="false">http://www.ekuater.com:7788/label-api/share/confideDetail.html?confideId=</string>
+
+    <bool name="check_verify_code">true</bool>
+
+    <string name="rong_cloud_im_app_key" translatable="false">8brlm7ufrsjb3</string>
+    <string name="rong_cloud_im_app_secret" translatable="false">0t5x50VJXX1Xv</string>
+
+    <string name="amap_api_key" translatable="false">fb3616d009e5c195dc1524f0bd1b67f2</string>
+
+    <string name="umeng_app_key" translatable="false">54797651fd98c5131c00004d</string>
+</resources>

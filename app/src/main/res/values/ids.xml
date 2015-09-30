@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="view_tag_first" type="id" />
+    <item name="view_tag_second" type="id" />
+
+    <item name="title_bar" type="id" />
+    <item name="title" type="id" />
+
+    <item type="id" name="label_select_text1"/>
+    <item type="id" name="label_select_text2"/>
+    <item type="id" name="label_select_text3"/>
+    <item type="id" name="label_select_text4"/>
+    <item type="id" name="label_select_text5"/>
+    <item type="id" name="label_select_text6"/>
+    <item type="id" name="label_select_text7"/>
+    <item type="id" name="label_select_text8"/>
+    <item type="id" name="label_select_text9"/>
+    <item type="id" name="label_select_text10"/>
+    <item type="id" name="label_select_text11"/>
+    <item type="id" name="label_select_text12"/>
+    <item type="id" name="label_select_text13"/>
+    <item type="id" name="label_select_text14"/>
+    <item type="id" name="label_select_text15"/>
+    <item type="id" name="label_select_text16"/>
+    <item type="id" name="label_select_text17"/>
+    <item type="id" name="label_select_text18"/>
+    <item type="id" name="label_select_text19"/>
+    <item type="id" name="label_select_text20"/>
+    <item type="id" name="label_select_text21"/>
+    <item type="id" name="label_select_text22"/>
+    <item type="id" name="label_select_text23"/>
+    <item type="id" name="label_select_text24"/>
+    <item type="id" name="label_select_text25"/>
+</resources>

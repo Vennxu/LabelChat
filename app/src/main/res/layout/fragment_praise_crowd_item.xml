@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.ekuater.labelchat.ui.widget.CircleImageView
+        android:id="@+id/praise_crowd_avatar_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/contact_single" />
+
+
+    <TextView
+        android:id="@+id/praise_crowd_nickname"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/praise_crowd_avatar_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="@integer/nickname_max_length"
+        android:singleLine="true"
+        android:text="@string/nickname"
+        android:textColor="#6C6C6C" />
+    <LinearLayout
+        android:id="@+id/rating_linear_grade"
+        android:layout_below="@+id/praise_crowd_nickname"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <RatingBar
+            android:id="@+id/rating_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/myRatingBar"
+            android:isIndicator="true"
+            />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/create_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_linear_grade"
+        android:layout_centerHorizontal="true"
+        android:text="@string/date_sample"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+
+
+
+
+
+

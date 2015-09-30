@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="music_transparent">#BF000000</color>
+
+    <color name="submit_btn_normal">#770077</color>
+    <color name="submit_btn_pressed">#888888</color>
+    <color name="submit_btn_disable">#aaaaaa</color>
+    <color name="register_btn_normal">#770077</color>
+    <color name="register_btn_pressed">#888888</color>
+    <color name="register_btn_disable">#aaaaaa</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="popupWindow_color">#272727</color>
+    <color name="shadow">#3F000000</color>
+    <color name="blue">#FF86c5e4</color>
+    <color name="pink">#FFffa8ad</color>
+
+    <color name="divider_color">#7FA1A1A1</color>
+    <color name="actionbar_tab_unselected">#b9996f</color>
+    <color name="actionbar_tab_selected">#ff6600</color>
+    <color name="actionbar_tab_selected_pressed">#ff6600</color>
+
+    <color name="friend_name_color">@color/lcPrimaryColor</color>
+    <color name="stranger_name_color">@color/black</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="divider">#FFdcdcdc</color>
+
+    <color name="colorPrimary">@color/lcPrimaryColor</color>
+    <color name="colorSecondary">@color/lcPrimaryColorLight</color>
+    <color name="colorDarkBackground">#FF000000</color>
+    <color name="colorLightBackground">#FFFFFFFF</color>
+    <color name="colorRemarks">#FFA1A1A1</color>
+    <color name="colorDarkGray">#FF4F4F4F</color>
+    <color name="colorLightDark">#FF8F8F8F</color>
+    <color name="colorLabelTextDark">#FF6F6F6F</color>
+    <color name="colorLabelTextLight">@color/lcPrimaryColor</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="pieViewColor">@color/lcPrimaryColorLight</color>
+    <color name="actionBarStyle">#464e66</color>
+
+    <color name="colorgroupdown">#ed5451</color>
+    <color name="story_grey">#cccccc</color>
+    <color name="colorlabelstory_dark">#9cddd8</color>
+
+    <color name="story_backgroud">#f0efed</color>
+    <color name="story_driver">#bfbfbf</color>
+    <color name="story_name">#535353</color>
+    <color name="story_label_name">@color/story_content</color>
+    <color name="story_content">#626262</color>
+    <color name="story_time">#a0a0a0</color>
+    <color name="story_floor">@color/story_time</color>
+    <color name="story_praise">@color/story_time</color>
+    <color name="story_comment">@color/story_time</color>
+    <color name="contact_label_content">#a0a0a0</color>
+    <color name="contact_label_name">#626262</color>
+    <color name="label_background">#6ecac3</color>
+
+    <color name="dasheline">#CABBBBBB</color>
+    <color name="comment_name">#313131</color>
+    
+    <color name="letter_msg_other">#76685D</color>
+    <color name="letter_msg_me">#C6C5CD</color>
+    <color name="popuwindow_bg">#272727</color>
+    <color name="backgroundColor">#edf1f2</color>
+
+    <color name="follow">#fd655a</color>
+    <color name="followed">#00a0e9</color>
+
+    <color name="movie_bg">#6d86ac</color>
+    <color name="music_bg">#8879a8</color>
+    <color name="book_bg">#9c8864</color>
+    <color name="sport_bg">#508f68</color>
+    <color name="food_bg">#b95e8d</color>
+
+    <color name="movie_name">#b2def0</color>
+    <color name="music_name">#ebc2f1</color>
+    <color name="book_name">#ffe0a9</color>
+    <color name="sport_name">#9ce8e2</color>
+    <color name="food_name">#f696c7</color>
+
+
+    <color name="send_letter_message_state">#63AA40</color>
+    <color name="receive_letter">#FDCA24</color>
+    <color name="user_option_bar">#282c2d</color>
+    <color name="check_more">#66cd00</color>
+    
+    <color name="albumGalleryFunCover">#5F000000</color>
+    
+    <color name="confide_male">#3a74af</color>
+    <color name="confide_female">#c13d5c</color>
+
+    <color name="confide_other">#dcdcdc</color>
+    <color name="confide_publish_enable">@color/white</color>
+    <color name="confide_publish_disable">#FFDCDCDC</color>
+
+    <color name="input_transparent">#9000</color>
+    <color name="cover_bg">#BF000000</color>
+    <color name="mood_bg">#939BB9</color>
+    <color name="photo_praise">#FF7171</color>
+    <color name="notify_upload_photo">#F9C470</color>
+
+    <color name="dynamic_image_bg">#7486bd</color>
+</resources>

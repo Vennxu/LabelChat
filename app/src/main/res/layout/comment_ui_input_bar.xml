@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_ui_input_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="top"
+        android:background="@color/story_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/comment_text_input_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatting_ui_input_bar_edit_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/comment_text_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xu huifu"
+                    android:visibility="gone" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/chatting_ui_input_edit_margin_left"
+                    android:layout_marginRight="@dimen/chatting_ui_input_edit_margin_right">
+                    <com.ekuater.labelchat.ui.widget.emoji.EmojiEditText
+                        android:id="@+id/comment_ui_input_edit"
+                        style="@style/ChatInputBarEditStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:visibility="gone"
+                        android:imeActionLabel="@string/chatting_ui_input_edit_ime_action_label"
+                        android:minHeight="@dimen/chatting_ui_input_edit_height" />
+
+                    <com.ekuater.labelchat.ui.widget.emoji.ShowContentTextView
+                        android:id="@+id/comment_ui_input_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/story_comment"
+                        android:text="@string/labelstroy_input_comment_hint"
+                        android:minHeight="@dimen/chatting_ui_input_edit_height"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:visibility="visible"/>
+
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/comment_ui_face_switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/chatting_ui_face_switch_btn_content_description"
+                    android:src="@drawable/ic_input_face_selector" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_ui_input_right_btn_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/comment_ui_input_send_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/coments_send_shape"
+                android:enabled="false"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
